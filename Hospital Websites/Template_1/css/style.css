@@ -15,6 +15,9 @@ a {
 }
 
 /********** Start of Navbar Styles **********/
+.navbar{
+  z-index: 9999;
+}
 .nav-back {
   background: rgba(17, 219, 207, 0.8);
 }
@@ -58,7 +61,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 80vh;
+  height: 90vh;
 }
 #hero h1 {
   margin: 0 0 10px 0;
