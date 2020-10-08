@@ -3701,7 +3701,7 @@ input[type="submit"].btn::-moz-focus-inner {
   text-decoration: none;
   background-color: transparent;
 }
-,
+
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover {
   color: #555;
@@ -4020,7 +4020,6 @@ input[type="submit"].btn::-moz-focus-inner {
   border-top-left-radius: 4px;
   -moz-border-radius-bottomleft: 4px;
   -moz-border-radius-topleft: 4px;
-  :a9201a ;
 }
 .pagination ul > li:last-child > a,
 .pagination ul > li:last-child > span {
