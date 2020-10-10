@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesomr CDN -->
+    <script
+      src="https://kit.fontawesome.com/4738fcddfc.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slick Slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!------------ Header Section Start ------------>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="btn-group">
+              <button
+                class="btn border dropdown-toggle my-md-4 my-2 text-white"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                INR
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 text-center">
+            <h2 class="my-md-3 site-title text-white">Online Store</h2>
+          </div>
+          <div class="col-md-4 col-12 text-right">
+            <p class="my-md-4 header-links">
+              <a href="#" class="px-2">Sign In</a>
+              <a href="#" class="px-1">Create an Account</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar Start -->
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >HOME <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FEATURES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">COLLECTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-nav">
+            <li class="nav-item border rounded-circle mx-2 search-icon">
+              <i class="fas fa-search p-2"></i>
+            </li>
+            <li class="nav-item border rounded-circle mx-2 basket-icon">
+              <i class="fas fa-shopping-basket p-2"></i>
+            </li>
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar End -->
+    </header>
+    <!------------ Header Section End ------------>
+
+    <!------------ Hero Section Start ------------>
+    <main class="mb-5 pb-5">
+      <!-- First Slider Start -->
+      <div class="container-fluid p-0">
+        <div class="site-slider">
+          <div class="slider-one">
+            <div>
+              <img
+                src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                class="img-fluid"
+                alt="Banner 1"
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/584399/living-room-couch-interior-room-584399.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                class="img-fluid"
+                alt="Banner 2"
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                class="img-fluid"
+                alt="Banner 3"
+              />
+            </div>
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top"
+              ><i class="fas fa-chevron-left"></i
+            ></span>
+            <span class="next position-top right-0"
+              ><i class="fas fa-chevron-right"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+      <!-- First Slider End -->
+
+      <!-- Second Slider Start -->
+      <div class="container-fluid border-bottom">
+        <div class="site-slider-two px-md-4">
+          <div class="row slider-two text-center">
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/product-1.jpg" alt="Product 1" />
+              <span class="border site-btn btn-span">SOFA & CHAIRS</span>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/product-2.jpg" alt="Product 2" />
+              <span class="border site-btn btn-span">FURNITURES & DECOR</span>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/product-3.jpg" alt="Product 3" />
+              <span class="border site-btn btn-span">LAMP & LIGHTING</span>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/product-4.jpg" alt="Product 4" />
+              <span class="border site-btn btn-span">SOUND & LIFE</span>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/product-5.jpg" alt="Product 5" />
+              <span class="border site-btn btn-span">APPLIANCES</span>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/product-6.jpg" alt="Product 6" />
+              <span class="border site-btn btn-span">SOFA & CHAIRS</span>
+            </div>
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top"
+              ><i class="fas fa-chevron-left fa-2x text-secondary"></i
+            ></span>
+            <span class="next position-top right-0"
+              ><i class="fas fa-chevron-right fa-2x text-secondary"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+      <!-- Second Slider End -->
+
+      <!-- Third Slider Start -->
+      <div class="container-fluid py-5 my-md-5">
+        <div class="slider-heading text-center px-3">
+          <h2 class="my-4">Featured Products</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia,
+            perferendis quibusdam. Vitae harum obcaecati sapiente.
+          </p>
+        </div>
+        <div class="site-slider-three px-md-4">
+          <div class="row slider-three text-center">
+            <div class="col-md-2 product py-md-5 pt-4">
+              <img src="images/fp-1.png" alt="Product 1" />
+              <div class="product-info">
+                <span class=""><strong>Dining Table (Teak)</strong></span>
+                <br />
+                <span
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                ></span>
+                <br />
+                <span class="text-muted"><del>Rs. 12,000</del></span
+                ><span class="price"> Rs. 10,000</span> <br /><br />
+                <span
+                  class="border site-btn btn-span add-to-cart text-uppercase"
+                  >Add to Cart</span
+                >
+              </div>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/fp-2.png" alt="Product 2" />
+              <div class="product-info">
+                <span class=""><strong>Dining Table (Glass-Top)</strong></span>
+                <br />
+                <span
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                ></span>
+                <br />
+                <span class="text-muted"><del>Rs. 15,149</del></span
+                ><span class="price"> Rs. 12,449</span> <br /><br />
+                <span
+                  class="border site-btn btn-span add-to-cart text-uppercase"
+                  >Add to Cart</span
+                >
+              </div>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/fp-3.png" alt="Product 3" />
+              <div class="product-info">
+                <span class=""><strong>Bed with Closet (Teak)</strong></span>
+                <br />
+                <span
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                ></span>
+                <br />
+                <span class="text-muted"><del>Rs. 17,699</del></span
+                ><span class="price"> Rs. 16,499</span> <br /><br />
+                <span
+                  class="border site-btn btn-span add-to-cart text-uppercase"
+                  >Add to Cart</span
+                >
+              </div>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/fp-4.png" alt="Product 4" />
+              <div class="product-info">
+                <span class=""><strong>Small Table (Teak)</strong></span>
+                <br />
+                <span
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                ></span>
+                <br />
+                <span class="text-muted"><del>Rs. 6,999</del></span
+                ><span class="price"> Rs. 5,449</span> <br /><br />
+                <span
+                  class="border site-btn btn-span add-to-cart text-uppercase"
+                  >Add to Cart</span
+                >
+              </div>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/fp-5.png" alt="Product 5" />
+              <div class="product-info">
+                <span class=""
+                  ><strong>Dressing Table with mirror (Teak)</strong></span
+                >
+                <br />
+                <span
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                ></span>
+                <br />
+                <span class="text-muted"><del>Rs. 12,999</del></span
+                ><span class="price"> Rs. 10,999</span> <br /><br />
+                <span
+                  class="border site-btn btn-span add-to-cart text-uppercase"
+                  >Add to Cart</span
+                >
+              </div>
+            </div>
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="images/fp-6.png" alt="Product 6" />
+              <div class="product-info">
+                <span class=""><strong>Dining Table (Acacia)</strong></span>
+                <br />
+                <span
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                ></span>
+                <br />
+                <span class="text-muted"><del>Rs. 10,499</del></span
+                ><span class="price"> Rs. 9,399</span> <br /><br />
+                <span
+                  class="border site-btn btn-span add-to-cart text-uppercase"
+                  >Add to Cart</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top"
+              ><i class="fas fa-chevron-left fa-2x text-secondary"></i
+            ></span>
+            <span class="next position-top right-0"
+              ><i class="fas fa-chevron-right fa-2x text-secondary"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+      <!-- Third Slider End -->
+    </main>
+    <!------------ Hero Section End ------------>
+
+    <!------------ Footer Section Start ------------>
+
+    <!------------ Footer Section End ------------>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slick Slider JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

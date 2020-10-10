@@ -1,0 +1,277 @@
+/* Import fonts from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto:wght@400;500&family=Sofia&display=swap");
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Gugi', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sofia', cursive; */
+
+:root {
+  --light-gray: #2b3032a1;
+  --primary-color: #45ccb8;
+  --border: #2b303218;
+  --text-color: #ff686b;
+  --roboto: "Roboto", sans-serif;
+  --gugi: "Gugi", cursive;
+  --sofia: "Sofia", cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.font-roboto {
+  font-family: var(--roboto);
+}
+
+.light-blue {
+  color: lightblue;
+}
+
+/*********** Header Styling Start ***********/
+header {
+  background-color: var(--primary-color);
+  font-family: var(--roboto);
+}
+
+header .site-title {
+  font-family: var(--gugi);
+}
+
+.container .dropdown-toggle,
+.container .dropdown-item {
+  font-size: 0.7em;
+}
+
+.header-links a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navigation Styling Start */
+.navbar-nav {
+  padding: 0.8em 0em;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.9em;
+  color: var(--light-gray) !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 0 1.3em;
+}
+
+.navbar-nav .basket-icon {
+  margin-right: 6.5rem !important;
+}
+/* Navigation Styling End */
+
+/*********** Header Styling End ***********/
+
+/*********** Hero Styling Start ***********/
+
+/* Slider One Start */
+.site-slider {
+  position: relative;
+}
+.slider-one img {
+  margin: 0 auto;
+}
+
+.position-top {
+  position: absolute;
+  top: 45%;
+}
+
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next {
+  background-color: var(--primary-color);
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: #fff;
+  margin: 0 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next {
+  opacity: 1;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 0;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+}
+
+.slick-dots li {
+  margin: 0 0.6rem;
+}
+
+.slick-dots button {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: none;
+  background-color: #ff686b;
+  text-indent: -99999px;
+  border-radius: 100%;
+}
+
+.slick-dots li.slick-active button {
+  transform: scale(2.5);
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+/* Slider One End */
+
+/* Slider Two Start */
+.site-slider-two {
+  position: relative;
+  height: 30%;
+}
+
+.site-slider-two .product {
+  height: 25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-slider-two .product img {
+  width: 90%;
+  margin: auto;
+}
+
+.site-btn.btn-span {
+  /* font-size: 0.8rem; */
+  padding: 0.8rem 1.9rem;
+  border-radius: 4rem;
+  border: 1px solid var(--border);
+  background-color: #fff;
+  color: var(--light-gray);
+}
+
+.slider-two .slick-track .product:hover span {
+  background-color: var(--primary-color);
+}
+
+.site-slider-two .slider-btn .prev,
+.site-slider-two .slider-btn .next {
+  background-color: var(--primary-color);
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: #fff;
+  margin: 0 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.site-slider-two:hover .slider-btn .prev,
+.site-slider-two:hover .slider-btn .next {
+  opacity: 1;
+}
+/* Slider Two End */
+
+/* Slider Three Start */
+.slider-heading {
+  font-family: var(--gugi);
+}
+
+.slider-heading p {
+  font-family: var(--roboto);
+}
+
+.site-slider-three {
+  position: relative;
+  height: 30%;
+}
+
+.site-slider-three .product {
+  height: 35rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-slider-three .product img {
+  width: 90%;
+  margin: auto;
+}
+
+.product-info {
+  line-height: 2;
+}
+
+.product-info .fa-star {
+  color: var(--primary-color);
+}
+
+.product-info .price {
+  font-size: 1.1rem;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.product-info .site-btn{
+  border: 1px solid #ff0000 !important;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+.product-info .site-btn:hover{
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.product-info .add-to-cart{
+  color: #ff0000;
+}
+
+.site-slider-three .slider-btn .prev,
+.site-slider-three .slider-btn .next {
+  background-color: var(--primary-color);
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: #fff;
+  margin: 0 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.site-slider-three:hover .slider-btn .prev,
+.site-slider-three:hover .slider-btn .next {
+  opacity: 1;
+}
+/* Slider Three End */
+
+/*********** Hero Styling End ***********/
