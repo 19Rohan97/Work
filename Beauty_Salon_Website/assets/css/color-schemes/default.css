@@ -1225,10 +1225,10 @@ textarea:-ms-input-placeholder {
   background-color: #f5f5f5;
 }
 .lsvr-slide-list__item-content-inner {
-  background-color: #fff;
+  background-color: transparent;
 }
 .lsvr-slide-list__item-content-inner:before {
-  background-color: #fff;
+  background-color: transparent;
 }
 .lsvr-slide-list__item-text {
   color: #8a949b;
