@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>hello</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <style>
+      h1 {
+        font-size: 2em;
+        margin-bottom: 0.2em;
+        padding-bottom: 0;
+      }
+      p {
+        font-size: 1.5em;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      #page {
+        display: none;
+      }
+      #loading {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(192, 192, 192, 0.5);
+        background-image: url("https://loading.io/spinners/hourglass/lg.sandglass-time-loading-gif.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <h1 align="center">Welcome to My Page</h1>
+    </div>
+    <div id="loading"></div>
+    <script>
+      function onReady(callback) {
+        var intervalID = window.setInterval(checkReady, 3000);
+        function checkReady() {
+          if (document.getElementsByTagName("body")[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+          }
+        }
+      }
+      function show(id, value) {
+        document.getElementById(id).style.display = value ? "block" : "none";
+      }
+      onReady(function () {
+        show("page", true);
+        show("loading", false);
+      });
+    </script>
+  </body>
+</html>

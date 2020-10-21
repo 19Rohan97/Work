@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>hello</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <style>
+      h1 {
+        font-size: 2em;
+        margin-bottom: 0.2em;
+        padding-bottom: 0;
+      }
+      p {
+        font-size: 1.5em;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      #page {
+        display: none;
+      }
+      #loading {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        background-image: url("blocks.gif");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <h1 align="center">Welcome to My Page</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ligula
+        eros, interdum nec eros sed, vehicula aliquet libero. Etiam a accumsan
+        ipsum, vitae Aliquam ante. Pellentesque ex tellus, facilisis id risus
+        sit amet, vestibulum fringilla nisi. Suspendisse vitae sagittis ligula.
+        Nullam eu iaculis sapien. Donec eget hendrerit massa. Aliquam erat
+        volutpat. Pellentesque vitae arcu eu lectus ultrices bibendum. Mauris
+        ullamcorper varius ex vel aliquam. Vivamus auctor nisi in aliquam
+        pharetra. Proin nisl ante, rutrum eget ante vulputate, aliquam sodales
+        augue. Sed sodales efficitur ipsum eu posuere. Vestibulum ullamcorper
+        orci vitae blandit iaculis. Nam quis tempor nulla, id vestibulum nisi.
+        Mauris ipsum lectus, efficitur ut facilisis sit amet, porta egestas
+        urna. Nullam fringilla sollicitudin sem nec convallis. Nam eget ipsum
+        tellus. Sed a semper ante. Nunc sit amet ligula quis lectus molestie
+        finibus. Fusce vel venenatis lectus. Proin dignissim diam ex, quis
+        tincidunt leo sollicitudin ac. Vestibulum auctor in magna eget
+        tristique. Suspendisse potenti. Aliquam nisi velit, feugiat vel mi nec,
+        varius aliquet eros. Mauris metus tellus, elementum sed ipsum at,
+        venenatis commodo turpis. Nulla porta mauris at ex fringilla, sit amet
+        mattis lacus interdum. Mauris sed erat euismod, sollicitudin nibh a,
+        lacinia velit. Fusce tempus sem nec velit ultricies pulvinar. Aenean
+        dictum ac ante et faucibus.
+      </p>
+    </div>
+    <div id="loading"></div>
+    <script>
+      function onReady(callback) {
+        var intervalID = window.setInterval(checkReady, 3000);
+        function checkReady() {
+          if (document.getElementsByTagName("body")[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+          }
+        }
+      }
+      function show(id, value) {
+        document.getElementById(id).style.display = value ? "block" : "none";
+      }
+      onReady(function () {
+        show("page", true);
+        show("loading", false);
+      });
+    </script>
+  </body>
+</html>
